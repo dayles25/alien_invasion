@@ -17,6 +17,8 @@ class AlienInvasion:
 
         self.bg_color = (18, 30, 199)
 
+        self.ship = Ship(self)
+
     def run_game(self):
         '''Start the main loop for the game'''
         while True:
@@ -25,6 +27,8 @@ class AlienInvasion:
                     sys.exit()
 
             self.screen.fill(self.settings.bg_color)
+
+            self.ship.blitme()
 
             pygame.display.flip()
 
