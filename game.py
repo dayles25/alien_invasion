@@ -20,12 +20,14 @@ class AlienInvasion:
         self.bg_color = (18, 30, 199)
 
         self.ship = Ship(self)
+        self.bullets = pygame.sprite.Group()
 
     def run_game(self):
         '''Start the main loop for the game'''
         while True:
             self._check_events()
             self.ship.update()
+            self.bullets.update()
             self._update_screen()
 
     def _check_events(self):
