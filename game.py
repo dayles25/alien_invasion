@@ -25,7 +25,7 @@ class AlienInvasion:
             self._check_events()
             self._update_screen()
 
-    def _check_vents(self):
+    def _check_events(self):
         '''respond to keypress and mouse events'''
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
