@@ -8,7 +8,7 @@ class Ship:
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
 
-        self.image = pygame.image.load('images/coolspaceship.png')
+        self.image = pygame.image.load('../images/coolspaceship.png')
         self.image = pygame.transform.scale(self.image, (100, 150))
         self.rect = self.image.get_rect()
         self.rect.midbottom = self.screen_rect.midbottom
