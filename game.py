@@ -1,5 +1,4 @@
 import pygame
-import math
 import sys
 from settings import Settings
 from ship import Ship
