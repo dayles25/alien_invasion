@@ -1,8 +1,8 @@
 import sys
 import pygame
 from settings import Settings
-from ship import Ship
-from bullet import Bullet
+from ship_2 import Ship
+from bullet_2 import Bullet
 
 class SidewaysShooter:
     """Overall class to manage game assets and behavior."""
